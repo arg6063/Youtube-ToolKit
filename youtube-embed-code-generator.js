@@ -123,7 +123,7 @@ function youtubeEmbedCode() {
     code = responsiveCode + "<iframe width='" + width + "' height='" + height + "' src=\"https://www.youtube.com/" + playerType + "/" + pMODE + videoID + filler + theme + barColor + autoplay + keyboard + autohide + captions + logo + fullscreen + playlist + showinfo + related + start + stop + annotation + "\"" + border + "></iframe>" + divClose;
   }
   //Backlink Code  
-  code += "<div style='font-size: 0.8em'><a href='/'>Created with Love</a></div>";
+  code += "<div style='font-size: 0.8em'><a href='https://www.nocodingguru.com/'>Created with Love</a></div>";
 
   //Prints "no preview " message for ajax and flash players
   if (playerType == 'v' || async.checked == true) {
