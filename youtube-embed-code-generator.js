@@ -1,3 +1,5 @@
+/*This program was designed and developed by Codegena.com
+*/
 // https://developers.google.com/youtube/player_parameters?hl=en#Parameters
 
 var pMODE = "";
@@ -93,8 +95,7 @@ function youtubeEmbedCode() {
   if (responsive.checked != true) {
     responsiveCode = divClose = "";
   } else {
-    responsiveCode = "<style>.codegena{position:relative;width:100%;height:0;padding-bottom:56.27198%;}.codegena iframe{position:absolute;top:0;left:0;width:100%;height:100%;}/*Youtube Embed Code : Created with 
-      .com */</style><div class=\"codegena\">";
+    responsiveCode = "<style>.codegena{position:relative;width:100%;height:0;padding-bottom:56.27198%;}.codegena iframe{position:absolute;top:0;left:0;width:100%;height:100%;}/*Youtube Embed Code : Created with Codegena.com */</style><div class=\"codegena\">";
     divClose = "</div>";
   }
   //Condtional Assignments   
@@ -162,7 +163,7 @@ function getThumb(vidID) {
   if (vidID.length == 11 || vidID.length < 14) {
     return " src='http://i.ytimg.com/vi/" + vidID + "/hqdefault.jpg'";
   } else {
-    return " src='https://blogger.googleusercontent.com/img/a/AVvXsEjtijRTNC6M5CrsFL5_L10xZPeaQ7tVsVLR1zQSxiOH-H4xqd67PXkfMBOfe9PaxvJMtxMZ8tmrIKh4QwOq4dHr27-gqqIHjJp8tmzA6DH67KVWdLYPfJE4QbpEfhtG3llcRqIMKuUuHRgbNWuNrIlVaDfAS_qQcfqRkarX34BHlSAXRsOTGTQM7h5XkA=s553'";
+    return " src='http://codegena.com/assets/images/no_image_available.jpg'";
   }
 }
 
