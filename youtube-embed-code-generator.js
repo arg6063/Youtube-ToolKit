@@ -162,7 +162,7 @@ function getThumb(vidID) {
   if (vidID.length == 11 || vidID.length < 14) {
     return " src='http://i.ytimg.com/vi/" + vidID + "/hqdefault.jpg'";
   } else {
-    return " src='http://codegena.com/assets/images/no_image_available.jpg'";
+    return " src='https://blogger.googleusercontent.com/img/a/AVvXsEjtijRTNC6M5CrsFL5_L10xZPeaQ7tVsVLR1zQSxiOH-H4xqd67PXkfMBOfe9PaxvJMtxMZ8tmrIKh4QwOq4dHr27-gqqIHjJp8tmzA6DH67KVWdLYPfJE4QbpEfhtG3llcRqIMKuUuHRgbNWuNrIlVaDfAS_qQcfqRkarX34BHlSAXRsOTGTQM7h5XkA=s553'";
   }
 }
 
