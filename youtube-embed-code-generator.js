@@ -118,7 +118,7 @@ function youtubeEmbedCode() {
 
   var async = document.getElementById('async');
   if (async.checked == true) {
-    code = "<div class='youtube_codegena' id='" + pMODE + videoID + "' " + params + thumbnail + "style='width:" + width + "px; height:" + height + "px;'></div>" + "<script src='https://rawgit.com/shaneapen/Async-Youtube-Player/master/async_youtube_player.js'></script" + ">";
+    code = "<div class='youtube_codegena' id='" + pMODE + videoID + "' " + params + thumbnail + "style='width:" + width + "px; height:" + height + "px;'></div>" + "<script src='https://arg6063.github.io/Youtube-ToolKit/async_youtube_player.js'></script" + ">";
   } else {
     code = responsiveCode + "<iframe width='" + width + "' height='" + height + "' src=\"https://www.youtube.com/" + playerType + "/" + pMODE + videoID + filler + theme + barColor + autoplay + keyboard + autohide + captions + logo + fullscreen + playlist + showinfo + related + start + stop + annotation + "\"" + border + "></iframe>" + divClose;
   }
