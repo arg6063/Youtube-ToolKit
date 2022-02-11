@@ -1,6 +1,3 @@
-/*This program was designed and developed by Codegena.com
-ALL RIGHTS RESERVED
-*/
 // https://developers.google.com/youtube/player_parameters?hl=en#Parameters
 
 var pMODE = "";
@@ -96,7 +93,8 @@ function youtubeEmbedCode() {
   if (responsive.checked != true) {
     responsiveCode = divClose = "";
   } else {
-    responsiveCode = "<style>.codegena{position:relative;width:100%;height:0;padding-bottom:56.27198%;}.codegena iframe{position:absolute;top:0;left:0;width:100%;height:100%;}/*Youtube Embed Code : Created with Codegena.com */</style><div class=\"codegena\">";
+    responsiveCode = "<style>.codegena{position:relative;width:100%;height:0;padding-bottom:56.27198%;}.codegena iframe{position:absolute;top:0;left:0;width:100%;height:100%;}/*Youtube Embed Code : Created with 
+      .com */</style><div class=\"codegena\">";
     divClose = "</div>";
   }
   //Condtional Assignments   
@@ -122,8 +120,6 @@ function youtubeEmbedCode() {
   } else {
     code = responsiveCode + "<iframe width='" + width + "' height='" + height + "' src=\"https://www.youtube.com/" + playerType + "/" + pMODE + videoID + filler + theme + barColor + autoplay + keyboard + autohide + captions + logo + fullscreen + playlist + showinfo + related + start + stop + annotation + "\"" + border + "></iframe>" + divClose;
   }
-  //Backlink Code  
-  code += "<div style='font-size: 0.8em'><a href='http://codegena.com/generator/Youtube-Embed-Code-Generator.html'>Created by Codegena.</a></div>";
 
   //Prints "no preview " message for ajax and flash players
   if (playerType == 'v' || async.checked == true) {
