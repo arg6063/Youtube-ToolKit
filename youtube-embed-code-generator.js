@@ -1,4 +1,4 @@
-/*This program was designed and developed by Codegena.com
+/*developed by Codegena
 ALL RIGHTS RESERVED
 */
 // https://developers.google.com/youtube/player_parameters?hl=en#Parameters
@@ -96,7 +96,7 @@ function youtubeEmbedCode() {
   if (responsive.checked != true) {
     responsiveCode = divClose = "";
   } else {
-    responsiveCode = "<style>.codegena{position:relative;width:100%;height:0;padding-bottom:56.27198%;}.codegena iframe{position:absolute;top:0;left:0;width:100%;height:100%;}/*Youtube Embed Code : Created with Codegena.com */</style><div class=\"codegena\">";
+    responsiveCode = "<style>.codegena{position:relative;width:100%;height:0;padding-bottom:56.27198%;}.codegena iframe{position:absolute;top:0;left:0;width:100%;height:100%;}/*Youtube Embed Code : Created with Love */</style><div class=\"codegena\">";
     divClose = "</div>";
   }
   //Condtional Assignments   
@@ -123,7 +123,7 @@ function youtubeEmbedCode() {
     code = responsiveCode + "<iframe width='" + width + "' height='" + height + "' src=\"https://www.youtube.com/" + playerType + "/" + pMODE + videoID + filler + theme + barColor + autoplay + keyboard + autohide + captions + logo + fullscreen + playlist + showinfo + related + start + stop + annotation + "\"" + border + "></iframe>" + divClose;
   }
   //Backlink Code  
-  code += "<div style='font-size: 0.8em'><a href='http://codegena.com/generator/Youtube-Embed-Code-Generator.html'>Created by Codegena.</a></div>";
+  code += "<div style='font-size: 0.8em'><a href='/'>Created with Love</a></div>";
 
   //Prints "no preview " message for ajax and flash players
   if (playerType == 'v' || async.checked == true) {
@@ -166,7 +166,7 @@ function getThumb(vidID) {
   if (vidID.length == 11 || vidID.length < 14) {
     return " src='http://i.ytimg.com/vi/" + vidID + "/hqdefault.jpg'";
   } else {
-    return " src='http://codegena.com/assets/images/no_image_available.jpg'";
+    return " src='https://blogger.googleusercontent.com/img/a/AVvXsEjtijRTNC6M5CrsFL5_L10xZPeaQ7tVsVLR1zQSxiOH-H4xqd67PXkfMBOfe9PaxvJMtxMZ8tmrIKh4QwOq4dHr27-gqqIHjJp8tmzA6DH67KVWdLYPfJE4QbpEfhtG3llcRqIMKuUuHRgbNWuNrIlVaDfAS_qQcfqRkarX34BHlSAXRsOTGTQM7h5XkA=s16000'";
   }
 }
 
@@ -196,23 +196,4 @@ function refresh() {
   document.getElementsByTagName("form")[0].reset();
   document.getElementById("preview").innerHTML = "You will see preview here";
 
-}
-
-//Load Disqus on click with jquery
-// $(document).ready(function() { 
-//     $('.show-comments').on('click', function(){
-//       $("#disqus_thread").css({"background-color": "white", "padding": "24px","border-radius":"5px","width":"50%","min-width":"200px"}); 
-
-//           var disqus_shortname = 'codegena'; // Replace this value with *your* username.
-
-//           // ajax request to load the disqus javascript
-//           $.ajax({
-//                   type: "GET",
-//                   url: "//" + disqus_shortname + ".disqus.com/embed.js",
-//                   dataType: "script",
-//                   cache: true
-//           });
-//           // hide the button once comments load
-//           $(this).fadeOut();
-//     });
-// });
+};
