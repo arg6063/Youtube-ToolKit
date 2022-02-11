@@ -267,7 +267,7 @@ input:checked + .switch:active::before {
 
 @media all and (max-width: 1300px) and (min-width: 650px) {
   .ytembed, #disqus_thread {
-    width: 80%!important;
+    width: 100%!important;
   }
 }
 
